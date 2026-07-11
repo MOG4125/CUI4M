@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CUI4M</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CUI4M</h1>
+<p>Custom UI Creator for Bram Bos Mosaic</p>
+</header>
+
+<div class="main">
+
+<div class="left">
+
+<h2>Mosaic Script</h2>
+
+<textarea id="script" spellcheck="false" placeholder="// Paste your Mosaic script here..."></textarea>
+
+<div class="buttons">
+
+<button id="saveProject">
+Save Project
+</button>
+
+<button id="loadProject">
+Load Project
+</button>
+
+<button id="exportScript">
+Export Script
+</button>
+
+<input
+type="file"
+id="loadFile"
+accept=".cui4m"
+hidden>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<h2>Images</h2>
+
+<input
+type="file"
+id="imagePicker"
+accept="image/*"
+multiple>
+
+<div id="gallery"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
